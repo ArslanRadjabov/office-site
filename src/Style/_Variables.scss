@@ -1,0 +1,41 @@
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.align-start {
+  align-items: flex-start;
+}
+.align-end {
+  align-items: flex-end;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-around {
+  justify-content: space-evenly;
+}
+
+// colors
+:root {
+  --Steal: #0c3c60;
+  --nav_text_hover: #8cbcdb;
+  --text_steal: #072136;
+  --light_grey: #c6c6c6;
+  --light_blue: #dae9f2;
+  --lighter_grey: #f7f7f7;
+  --bold_steal: #072136;
+}

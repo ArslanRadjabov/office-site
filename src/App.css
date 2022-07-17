@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root {
+  --Steal: #0c3c60;
+  --text_steal: #072136;
+  --light_grey: #c6c6c6;
+  --light_blue: #dae9f2;
+  --lighter_grey: #f7f7f7;
+  --bold_steal: #072136;
+}
