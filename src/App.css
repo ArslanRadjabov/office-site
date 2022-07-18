@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@400;500;600;700&display=swap');
+
 *{
   margin: 0;
   padding: 0;
@@ -13,3 +15,49 @@
   --lighter_grey: #f7f7f7;
   --bold_steal: #072136;
 }
+
+.button-white {
+  padding: 15px 30px;
+  background-color: #fff;
+  border: 2px solid var(--bold_steal);
+  transition: all 0.3s;
+
+}
+.button-white:hover {
+  background-color: var(--bold_steal);
+  color: #fff;
+}
+.button-black {
+  padding: 15px 30px;
+  color: #fff;
+  background-color:  var(--bold_steal);
+  border: 2px solid var(--bold_steal);
+  transition: all 0.3s;
+
+}
+.button-black:hover {
+  background-color:white;
+  color: var(--bold_steal);
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #1b0b56 #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #1b0b56;
+    border-radius: 0px;
+    border: 3px solid #ffffff;
+  }

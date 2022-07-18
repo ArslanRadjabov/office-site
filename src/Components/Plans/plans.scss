@@ -1,0 +1,24 @@
+.Plans{
+    text-align: center;
+    h5{
+        font-weight: 300;
+    }
+    p{
+        text-align: center;
+        font-weight: 300;
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+.plans__desc_box{
+
+}
+@media screen and (max-width: 576px) {
+    .plans__desc_box{
+        width: 100%;
+        padding: 20px;
+        p{
+            width: 100%;
+        }
+    }
+}

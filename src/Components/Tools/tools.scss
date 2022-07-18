@@ -1,0 +1,19 @@
+.talab__taklif{
+    position: relative;
+    width: 60%;
+    margin: 0 auto;
+    .text-area{
+        padding: 20px;
+        width: 100%;
+        margin: 0 auto;
+        border: 1px solid rgba(0, 0, 0, 0.199) !important;
+    }
+}
+.talab__btn{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.btn-submit-form{
+    align-items: center;
+}
