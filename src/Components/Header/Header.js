@@ -1,35 +1,75 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.scss";
 
 function Header() {
+  let [width, setWidth] = useState(window.innerWidth);
+  setInterval(() => {
+    setWidth(window.innerWidth);
+  }, 100);
+
+  let [togle, setTogle] = useState(false);
+
+  let navTogle = () => {
+    setTogle(!togle);
+  };
+
   return (
     // header is here
-    <header className="flex align-center justify-center">
+    <header
+      className={
+        width < 992
+          ? togle
+            ? "header-position flex align-center justify-center"
+            : ""
+          : "flex align-center justify-center"
+      }
+    >
       <div className="header_container flex align-center justify-between">
-        <div className="header_logo">
+        <div onClick={width < 992 ? navTogle : ""} className="header_logo">
           <Link to={"/"}>Personal24</Link>
         </div>
 
         <nav>
-          <ul className="header_nav flex align-center justify-between">
-            <li className="header_nav-li">
-              <Link to={"/about"}>About</Link>
+          <div
+            onClick={navTogle}
+            className={width > 992 ? "header_lines-none" : "header_lines"}
+          >
+            <span className={togle ? "header-hidden-rotateLeft" : ""}></span>
+            <span
+              className={
+                togle ? "header-hidden-line header-line" : "header-line"
+              }
+            ></span>
+            <span className={togle ? "header-hidden-rotateRight" : ""}></span>
+          </div>
+          <ul
+            className={
+              width < 992
+                ? togle
+                  ? "header-responsive-open flex align-center justify-center flex-column"
+                  : "header-responsive flex align-center justify-center flex-column"
+                : "header_nav flex align-center justify-between"
+            }
+          >
+            <li onClick={width < 992 ? navTogle : ""} className="header_nav-li">
+              <Link to={"/"}>Bosh Sahifa</Link>
             </li>
-            <li className="header_nav-li">
-              <Link to={"/projects"}>Projects</Link>
+            <li onClick={width < 992 ? navTogle : ""} className="header_nav-li">
+              <Link to={"/about"}>Biz haqimizda</Link>
             </li>
-            <li className="header_nav-li">
-              <Link to={"/services"}>Services</Link>
+            <li onClick={width < 992 ? navTogle : ""} className="header_nav-li">
+              <Link to={"/projects"}>Bajarilgan Ishlar</Link>
+            </li>
+            <li onClick={width < 992 ? navTogle : ""} className="header_nav-li">
+              <Link to={"/services"}>Xizmatlar </Link>
             </li>
 
-            <li className="header_nav-li">
-              <Link to={"/plans"}>Plans & Pricing</Link>
+            <li onClick={width < 992 ? navTogle : ""} className="header_nav-li">
+              <Link to={"/plans"}>Xisob kitob</Link>
             </li>
-            <li className="header_nav-li">
-              <Link to={"/tools"}>Tools & Tips</Link>
-            </li>
-            <li className="header_nav-li">
-              <Link to={"/contact"}>Contact</Link>
+            <li onClick={width < 992 ? navTogle : ""} className="header_nav-li">
+              <Link to={"/tools"}>Talab & Taklif</Link>
             </li>
           </ul>
         </nav>

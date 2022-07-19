@@ -4,8 +4,8 @@ import './tools.scss'
 function Tools() {
   return (
     <div className='talab'>
-       <h1 className='project__title'>Talab va Takliflar</h1>    
-
+       <h1 className='project__title'>Talab va Takliflar</h1> 
+       
        <div className='container'>
        <div className='talab__taklif'>
          <form>

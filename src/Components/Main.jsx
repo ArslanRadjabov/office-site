@@ -7,6 +7,7 @@ import Plans from "./Plans/Plans";
 import Projects from "./Projects.js/Projects";
 import Services from "./Services/Services";
 import Tools from "./Tools/Tools";
+import Footer from "./Footer/Footer";
 
 function Main() {
   return (
@@ -22,6 +23,7 @@ function Main() {
           <Route path="/tools" element={<Tools />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
+        <Footer/>
       </main>
     </div>
   );

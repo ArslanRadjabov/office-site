@@ -1,0 +1,129 @@
+.about_team-title {
+  width: 100%;
+  margin: 40px auto;
+}
+
+.about_team-about {
+  width: 100%;
+  max-width: 1300px;
+  ul {
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding-left: 0;
+    gap: 10px;
+    justify-content: space-around;
+    li {
+      width: 20%;
+      border: 2px solid var(--light_grey);
+      padding: 10px;
+      height: 450px !important;
+      img {
+        transition: all 0.5s;
+      }
+      p {
+        transition: all 0.5s;
+      }
+      &:hover {
+        img {
+          -webkit-box-shadow: 5px 5px 5px 2px rgba(34, 60, 80, 0.2);
+        }
+        p {
+          text-shadow: 7px 2px 4px rgba(144, 150, 150, 1);
+        }
+      }
+    }
+  }
+}
+
+.about_team-img {
+  width: 200px;
+  height: 210px;
+  margin-bottom: 20px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.abaut_team-text {
+  margin-top: 20px;
+  h3 {
+    font-size: 20px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about_team-about {
+    ul {
+      flex-direction: column;
+      padding-left: 0;
+      li {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        gap: 20px;
+      }
+    }
+  }
+  .about_team-img {
+    width: 50%;
+    img {
+      width: 100% height 100%;
+    }
+  }
+  .abaut_team-text {
+    width: 40%;
+  }
+}
+
+@media (max-width: 765px) {
+  .about_team-about ul li {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about_team-about ul li {
+    width: 95%;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+    div {
+      width: 100%;
+    }
+  }
+  .about_team-img {
+    width: 100%;
+    // height: 59px;
+    margin-bottom: 20px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      // object-position:0px -100px;
+    }
+  }
+  // .team-members{
+  //   li{
+
+  //   }
+  // }
+}
+
